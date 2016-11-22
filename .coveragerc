@@ -1,0 +1,17 @@
+[run]
+branch = True
+source = kman
+include = kman/*
+omit =
+    kman/*/apps.py
+    kman/manage.py
+    kman/kman/wsgi.py
+    kman/kman/settings.py
+    *migrations/*
+
+[report]
+ignore_errors = True
+show_missing = True
+
+[html]
+directory = coverage_html

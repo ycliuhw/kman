@@ -1,0 +1,9 @@
+-r prod.txt
+
+# Dev tools
+django-debug-toolbar
+
+# Testing tools
+tox
+isort==4.2.3
+factory-boy
