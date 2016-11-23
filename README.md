@@ -1,17 +1,20 @@
 # KMAN
 
+Dependencies:
+  - python 3.5;
+  - Node v4.4.7 or above
+
 App structure:
   - `kman` -> `Django` Rest API backend;
   - `ReactFrontPage` -> ReactJS + Redux single page app;
 
-How to run `kman`:
+How to run `kman` Django REST API:
 ```sh
 $ virtualenv -p $(which python3.5) venv
 $ source venv/bin/activate
 $ pip install -r requirements/dev.txt
 $ tox
-$ ./kman/manage.py migrate
-$ ./kman/manage.py runserver
+$ python manage.py runserver
 ```
 
 How to run `ReactFrontPage`:
